@@ -1,0 +1,104 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "bf78cf66-3448-44a2-9559-4ad80a9a267b": {
+        "id": "bf78cf66-3448-44a2-9559-4ad80a9a267b",
+        "parent": null,
+        "name": "test23",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "fe79a445-6759-4f8a-9fd7-3f2544914d97"
+        ],
+        "isRemovable": false,
+        "filePath": "test23"
+      },
+      "fe79a445-6759-4f8a-9fd7-3f2544914d97": {
+        "id": "fe79a445-6759-4f8a-9fd7-3f2544914d97",
+        "parent": "bf78cf66-3448-44a2-9559-4ad80a9a267b",
+        "name": "function.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "test23/function.js",
+        "code": "exports.handler = function(request, response) {\n    \n    response.send({\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8",
+          "timeout": 60,
+          "memory": 128,
+          "triggerType": 0
+        },
+        "triggers": [
+          {
+            "resourceName": "scheduler-trigger",
+            "config": {
+              "type": "",
+              "schedulePattern": "1 1 1 1 2",
+              "jobId": "test-jobid"
+            }
+          }
+        ]
+      },
+      "6ee67ac1-593b-4f7b-ac82-cae643d87353": {
+        "id": "6ee67ac1-593b-4f7b-ac82-cae643d87353",
+        "parent": null,
+        "name": "index.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "index.js",
+        "code": "// This file is used to register all your cloud functions in GCP.\n// DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.\n\nexports.test23function = require(\"./test23/function.js\").handler;"
+      },
+      "8c9f15cd-3b41-4c9c-9580-eeb979c65ca0": {
+        "id": "8c9f15cd-3b41-4c9c-9580-eeb979c65ca0",
+        "parent": null,
+        "name": "main.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "main.py",
+        "code": "# This file is used to register all your cloud functions in GCP.\n# DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.\n\n"
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "bf78cf66-3448-44a2-9559-4ad80a9a267b",
+    "openFiles": [
+      "fe79a445-6759-4f8a-9fd7-3f2544914d97"
+    ],
+    "currentFileId": "fe79a445-6759-4f8a-9fd7-3f2544914d97",
+    "resources": {
+      "scheduler-trigger": {
+        "name": "scheduler-trigger",
+        "type": "scheduler-trigger",
+        "config": {}
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "test23",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east1",
+    "platform": "GCP",
+    "platformRegions": {},
+    "lastSave": 1566384673491
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "test23",
+      "url": "https://github.com/lpssudarshana/test23"
+    }
+  }
+}
