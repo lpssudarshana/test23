@@ -31,8 +31,12 @@
         },
         "triggers": [
           {
-            "resourceName": "http-trigger",
-            "config": {}
+            "resourceName": "scheduler-trigger",
+            "config": {
+              "type": "",
+              "schedulePattern": "1 1 1 1 1",
+              "jobId": "test31"
+            }
           }
         ]
       },
@@ -93,7 +97,7 @@
     "projectRegion": "us-east1",
     "platform": "GCP",
     "platformRegions": {},
-    "lastSave": 1566453215372
+    "lastSave": 1566882281877
   },
   "VCS_STATE": {
     "provider": "GitHub",
